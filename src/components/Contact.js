@@ -1,7 +1,7 @@
 // src/components/Contact.js
 export default function Contact() {
     return (
-      <section id="contact" className="py-20 bg-gray-800 text-white">
+      <section id="contact" className="py-20 bg-black text-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-8">Contact Me</h2>
           <p className="text-center text-lg mb-8">

@@ -6,7 +6,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gray-800 p-6 sticky top-0 z-50">
+    <header className="bg-black p-6 sticky top-0 z-50">
       <nav className="flex justify-between items-center text-white">
         {/* Logo */}
         <div className="font-bold">EMCodes</div>
