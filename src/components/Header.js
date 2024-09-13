@@ -8,7 +8,9 @@ export default function Header() {
   return (
     <header className="bg-gray-800 p-6 sticky top-0 z-50">
       <nav className="flex justify-between items-center text-white">
+        {/* Logo */}
         <div className="font-bold">EMCodes</div>
+
         {/* Hamburger icon for smaller screens */}
         <div className="sm:hidden">
           <button
@@ -31,12 +33,24 @@ export default function Header() {
             </svg>
           </button>
         </div>
-        {/* Navigation links */}
-        <div className={`space-x-4 ${menuOpen ? 'block' : 'hidden'} sm:flex`}>
+
+        {/* Navigation Links (Hidden by default in small screens, displayed in large screens) */}
+        <div className="hidden sm:flex space-x-4">
           <a href="#about" className="hover:underline">About</a>
           <a href="#projects" className="hover:underline">Projects</a>
           <a href="#contact" className="hover:underline">Contact</a>
         </div>
+
+        {/* Dropdown Menu for Mobile View */}
+        {menuOpen && (
+          <div className="absolute top-full left-0 w-full bg-gray-800 sm:hidden">
+            <div className="flex flex-col items-center space-y-4 py-4">
+              <a href="#about" className="hover:underline" onClick={() => setMenuOpen(false)}>About</a>
+              <a href="#projects" className="hover:underline" onClick={() => setMenuOpen(false)}>Projects</a>
+              <a href="#contact" className="hover:underline" onClick={() => setMenuOpen(false)}>Contact</a>
+            </div>
+          </div>
+        )}
       </nav>
     </header>
   );
