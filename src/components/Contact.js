@@ -6,7 +6,7 @@ export default function Contact() {
           <h2 className="text-4xl font-bold text-center mb-8">Contact Me</h2>
           <p className="text-center text-lg mb-8">
             I'd love to hear from you! Feel free to reach out via the form below or send me an email at
-            <span className="text-blue-400"> your-email@example.com</span>.
+            <span className="text-blue-400"> eevanmartinez@gmail.com</span>.
           </p>
           <form className="max-w-lg mx-auto bg-gray-900 p-6 rounded-lg">
             <div className="mb-4">

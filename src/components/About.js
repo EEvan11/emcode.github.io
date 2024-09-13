@@ -7,7 +7,7 @@ export default function About() {
           <p className="text-lg text-center mb-6">
             Hi, I'm Evan, a passionate full stack developer with experience in building
             dynamic, responsive websites and web applications. I specialize in
-            [your specializations, e.g., React, Next.js, TailwindCSS] and love to solve complex
+            [React, Next.js, TailwindCSS] and love to solve complex
             challenges with code.
           </p>
           <p className="text-lg text-center">
